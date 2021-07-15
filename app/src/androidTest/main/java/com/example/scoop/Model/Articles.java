@@ -1,0 +1,91 @@
+package com.example.scoop.Model;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Articles {
+
+    @SerializedName("source")
+    @Expose
+    private Source source;
+
+    public String getPublishedAt() {
+        return publishedAt;
+    }
+
+    public void setPublishedAt(String publishedAt) {
+        this.publishedAt = publishedAt;
+    }
+
+    @SerializedName("author")
+    @Expose
+    private String author;
+
+    @SerializedName("title")
+    @Expose
+    private String title;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    @SerializedName("description")
+    @Expose
+    private String description;
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public Source getSource() {
+        return source;
+    }
+
+    public void setSource(Source source) {
+        this.source = source;
+    }
+
+    @SerializedName("url")
+    @Expose
+    private String url;
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getUrlToImage() {
+        return urlToImage;
+    }
+
+    public void setUrlToImage(String urlToImage) {
+        this.urlToImage = urlToImage;
+    }
+
+    @SerializedName("urlToImage")
+    @Expose
+    private String urlToImage;
+
+    @SerializedName("publishedAt")
+    @Expose
+    private String publishedAt;
+
+}
